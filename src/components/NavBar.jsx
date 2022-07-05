@@ -14,7 +14,7 @@ function NavBar() {
   };
 
   return (
-    <form className="navbar">
+    <footer className="navbar">
       <nav className="navbarNav">
         <ul className="navbarListItems">
           <li className="navbarListItem" onClick={() => navigate("/")}>
@@ -26,7 +26,7 @@ function NavBar() {
             <p
               className={
                 pathMatchRoute("/")
-                  ? "navbarListNameActive"
+                  ? "navbarListItemNameActive"
                   : "navbarListItemName"
               }
             >
@@ -67,7 +67,7 @@ function NavBar() {
           </li>
         </ul>
       </nav>
-    </form>
+    </footer>
   );
 }
 export default NavBar;
